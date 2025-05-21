@@ -9,3 +9,4 @@ final=totalamount+tips
 each=final/spilt
 print(f"The total amount to pay!!!\n${final}")
 print(f"The total amount to pay each!!!\n${each}")
+########
