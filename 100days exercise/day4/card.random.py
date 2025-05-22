@@ -1,4 +1,4 @@
-#Random bill genarator
+#Random bill genarator new
 import random
 name=input("enter name sep with ','  :") #get user input with ,
 list_name=name.split(",")
