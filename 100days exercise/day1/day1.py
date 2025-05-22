@@ -24,7 +24,7 @@ elif age<=17:
 elif age > 18:
     bill=7
     print(f"your are in adult cater... ${bill} Dollar")
-photo=(input("Do you need photo?"))
+photo=(input("Do you need photo? y or n"))
 if photo=="y":
     bill+=3
     print(f"additional of 3 dollor will be charged total bill = ${bill} Dollar\nSay chesseee!!!!!!!!!")
