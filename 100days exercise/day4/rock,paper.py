@@ -1,7 +1,6 @@
 #rock paper scissors
 import random
-rock="""
-rock
+rock="""rock
     _______
 ---'   ____)
       (_____)
@@ -9,8 +8,7 @@ rock
       (____)
 ---.__(___)
 """
-paper="""
-paper
+paper="""paper
      _______
 ---'    ____)____
            ______)
@@ -18,8 +16,7 @@ paper
          _______)
 ---.__________)
 """
-scissors="""
-scissors
+scissors="""scissors
     _______
 ---'   ____)____
           ______)
@@ -31,16 +28,15 @@ scissors
 usr_value=input("Can you win ^-^ Type 0 for rock,Type 1 for Paper,Type 2 for scissors : ")
 game=[rock,paper,scissors]
 human=game[int(usr_value)]
-print("user",human)
+print("USER:",human)
 computer=random.randint(0,2)
 bot=game[computer]
-print("BOT",bot)
+print("BOT:",bot)
 #if conditions for the bot
 #win posibility
-#if human rock 0 scissors 2 win
-#if human paper 1 rock 0 win
-#if human scissors 2 paper 1
-
+#if human rock-0 scissors-2
+#if human paper-1 rock-0
+#if human scissors-2 paper-1
 if int(usr_value)==0 and computer==2:
     print("your win human")
 elif int(usr_value)==1 and computer==0:
