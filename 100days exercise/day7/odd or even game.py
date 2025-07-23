@@ -38,8 +38,8 @@ elif user_pick==1:
     human_play=int(input("Bowl number (0-6)"))
     if robot_play==human_play:
         print("robot out")
-    else:
-        robot_play+=robot_score
+    # else:
+    #     robot_play+=robot_score
 
 
 
