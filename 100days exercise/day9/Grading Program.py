@@ -11,7 +11,7 @@ for grade in students:
     if num > 90:
         students[grade]= "Outstanding"
     elif num >= 81:
-        students[grade]=" Exceeds Expections"
+        students[grade]="Exceeds Expections"
     elif num >=71:
         students[grade]= "Acceptable"
     else:
