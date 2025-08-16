@@ -1,5 +1,6 @@
 #calculator app
 
+
 # add function
 def add(n1,n2):
     return n1+n2
@@ -26,6 +27,9 @@ opration={
     "*":mul,
     "/":div
 }
+
+
+
 
 num_1=float(input("enter a number to calculate :"))
 
