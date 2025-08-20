@@ -5,7 +5,6 @@ print("welcome number guessing game")
 print("i am going to think a number between 1 and 100 you guess it")
 level=input("chose the level to be hard or easy?")
 
-
 def user_level(level):
     if level == "hard":
          attemts=5
