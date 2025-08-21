@@ -1,7 +1,7 @@
 import random
-import celebritylist
+from celebritylist import instagram_celebrities
 def ran_vip():
-    return random.choice(celebritylist.instagram_celebrities)
+    return random.choice(instagram_celebrities)
 
 def random_vip():
     for i in range(0,2):
@@ -16,7 +16,7 @@ def win_check(option,a,b,position):
         insta_cele.pop(position)
         score += 1
     else:
-        print("you lose, your current score is",score)
+        print("you lose, your score is",score)
         flag = False
 
 def display(insta_cele):
@@ -32,7 +32,7 @@ random_vip()
 score=0
 flag=True
 while flag:
-    print(f"your score is: {score}")
+    print(f"your score current is: {score}")
     a, b = display(insta_cele)
     # print(a, b)
     option=input("chose A or B : ")
