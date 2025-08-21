@@ -1,29 +1,7 @@
 import random
-instagram_celebrities = [
-    {"name": "Cristiano Ronaldo", "followers_millions": 661},
-    {"name": "Lionel Messi", "followers_millions": 506},
-    {"name": "Selena Gomez", "followers_millions": 420},
-    {"name": "Dwayne 'The Rock' Johnson", "followers_millions": 394},
-    {"name": "Kylie Jenner", "followers_millions": 393},
-    {"name": "Ariana Grande", "followers_millions": 375},
-    {"name": "Kim Kardashian", "followers_millions": 356},
-    {"name": "Beyoncé", "followers_millions": 311},
-    {"name": "Khloé Kardashian", "followers_millions": 302},
-    {"name": "Justin Bieber", "followers_millions": 294},
-    {"name": "Kendall Jenner", "followers_millions": 287},
-    {"name": "Taylor Swift", "followers_millions": 281},
-    {"name": "Virat Kohli", "followers_millions": 274},
-    {"name": "Jennifer Lopez", "followers_millions": 248},
-    {"name": "Neymar Jr.", "followers_millions": 231},
-    {"name": "Nicki Minaj", "followers_millions": 225},
-    {"name": "Miley Cyrus", "followers_millions": 212},
-    {"name": "Katy Perry", "followers_millions": 204},
-    {"name": "Zendaya", "followers_millions": 178},
-    {"name": "Lisa (BLACKPINK)", "followers_millions": 106}
-]
-
+import celebritylist
 def ran_vip():
-    return random.choice(instagram_celebrities)
+    return random.choice(celebritylist.instagram_celebrities)
 
 def random_vip():
     for i in range(0,2):
@@ -38,10 +16,11 @@ def win_check(option,a,b,position):
         insta_cele.pop(position)
         score += 1
     else:
-        print("you lose")
+        print("you lose, your current score is",score)
         flag = False
+
 def display(insta_cele):
-    print("A for", insta_cele[0]["name"], "vs", "b for", insta_cele[1]["name"], "who has more followers")
+    print("A for", insta_cele[0]["name"], "vs", "b for", insta_cele[1]["name"], "who has more followers in MILLION")
     a = insta_cele[0]["followers_millions"]
     b = insta_cele[1]["followers_millions"]
     return a,b
