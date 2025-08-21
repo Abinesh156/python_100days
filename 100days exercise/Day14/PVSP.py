@@ -1,5 +1,6 @@
 import random
 from celebritylist import instagram_celebrities
+
 def ran_vip():
     return random.choice(instagram_celebrities)
 
@@ -28,6 +29,12 @@ def display(insta_cele):
 
 insta_cele=[]
 random_vip()
+print(insta_cele[1])
+print(insta_cele[0])
+if insta_cele[0]==insta_cele[1]:
+    random_vip()
+    print("changed")
+# insta_cele=[]
 # print(insta_cele)
 score=0
 flag=True
