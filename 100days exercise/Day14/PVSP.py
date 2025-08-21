@@ -26,20 +26,25 @@ def display(insta_cele):
     b = insta_cele[1]["followers_millions"]
     return a,b
 
+def equal_check():
+    global insta_cele
+    while insta_cele[0] == insta_cele[1]:
+        insta_cele = []
+        random_vip()
 
 insta_cele=[]
 random_vip()
-print(insta_cele[1])
-print(insta_cele[0])
-if insta_cele[0]==insta_cele[1]:
-    random_vip()
-    print("changed")
+equal_check()
+
+
 # insta_cele=[]
 # print(insta_cele)
 score=0
 flag=True
 while flag:
     print(f"your score current is: {score}")
+    if insta_cele[0]==insta_cele[1]:
+        equal_check()
     a, b = display(insta_cele)
     # print(a, b)
     option=input("chose A or B : ")
