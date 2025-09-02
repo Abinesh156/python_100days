@@ -8,12 +8,6 @@ while flag:
 
 
 
-
-
-
-
-
-
 # import random
 # def random_questions():
 #     q=random.choice(questions)
