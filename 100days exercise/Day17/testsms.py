@@ -7,7 +7,7 @@ AWS_SECRET_KEY = ''
 # Replace with your values
 AWS_REGION = "ap-south-1"
 PINPOINT_PROJECT_ID = "your-pinpoint-application-id"
-DESTINATION_NUMBER = "+919600316815"   # E.164 format
+DESTINATION_NUMBER = ""   # E.164 format
 SENDER_ID = "MySenderID"             # Optional
 MESSAGE = "Hello! This is a test SMS from AWS Pinpoint."
 
